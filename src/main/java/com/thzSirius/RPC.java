@@ -12,7 +12,7 @@ import java.net.Socket;
  */
 public class RPC {
     public static void main(String args[]){
-        System.out.println("Test success");
+        System.out.println("Test success hahahaha");
         ObjectInputStream ois = null;
         ObjectOutputStream oos = null;
         Socket clientSocket = null;
