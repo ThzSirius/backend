@@ -12,8 +12,8 @@ import java.net.Socket;
  */
 public class RPC {
     public static void main(String args[]){
-        System.out.println("Test success hahahaha");
         ObjectInputStream ois = null;
+        System.out.println("Test success hahahaha");
         ObjectOutputStream oos = null;
         Socket clientSocket = null;
         ServerSocket ss=null;
