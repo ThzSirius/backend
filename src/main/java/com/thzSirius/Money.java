@@ -36,10 +36,19 @@ public class Money {
 
 
         TradeInfoService tradeInfoService = (TradeInfoService) ct.getBean("tradeInfoServiceImpl");
-        tradeInfoService.setEOSTradeInfo();
+//        tradeInfoService.setEOSTradeInfo();
         List<CoinData> lists = tradeInfoService.getAllTradeInfo();
-        
-        System.out.println("Game over");
+        int sell = 0;
+        int buy = 0;
+        for(CoinData coinData:lists){
+            if(coinData.getDirection().equals("sell")){
+                sell +=Double.parseDouble(coinData.getAmount());
+            }else{
+                buy +=Double.parseDouble(coinData.getAmount());
+            }
+        }
+
+        System.out.println("sell="+sell+"buy="+buy);
 
     }
 }

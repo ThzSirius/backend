@@ -16,7 +16,7 @@ import java.util.zip.GZIPInputStream;
 /**
  * ChatServer Client
  *
- * @author Jiji_Sasidharan
+ * @author ThzSirius
  */
 @ClientEndpoint
 public class WebsocketClientEndpoint {
